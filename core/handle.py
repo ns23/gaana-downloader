@@ -27,6 +27,9 @@ def get_arguments(raw_args=None,to_group=True,to_merge=True):
         group.add_argument(
             '-p','--playlist',help='Download song by playlist link'
         )
+        group.add_argument(
+            '-a','--album',help='Download song by album link or name'
+        )
     
     parser.add_argument(
         '-m','--manual',default=False,
